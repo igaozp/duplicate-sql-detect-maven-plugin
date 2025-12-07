@@ -1,0 +1,21 @@
+# Maven
+target/
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs & Temporary files
+test_failure.log
+test_output.txt
+full_test_log.txt
