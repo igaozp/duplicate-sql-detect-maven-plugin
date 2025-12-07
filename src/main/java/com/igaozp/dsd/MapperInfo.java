@@ -6,7 +6,11 @@ import java.util.List;
 public class MapperInfo {
     private String namespace;
     private String filePath;
-    private List<SqlStatement> statements;
+    private List<SqlStatement> statements = new ArrayList<>();
+    private boolean extendsBaseMapper;
+
+    public MapperInfo() {
+    }
 
     public MapperInfo(String namespace, String filePath) {
         this.namespace = namespace;
@@ -40,5 +44,13 @@ public class MapperInfo {
 
     public void addStatement(SqlStatement statement) {
         this.statements.add(statement);
+    }
+
+    public boolean isExtendsBaseMapper() {
+        return extendsBaseMapper;
+    }
+
+    public void setExtendsBaseMapper(boolean extendsBaseMapper) {
+        this.extendsBaseMapper = extendsBaseMapper;
     }
 }

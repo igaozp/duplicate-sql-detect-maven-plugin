@@ -46,4 +46,14 @@ public class SqlStatement {
     public void setSource(DefinitionSource source) {
         this.source = source;
     }
+
+    private String rawSql;
+
+    public String getRawSql() {
+        return rawSql;
+    }
+
+    public void setRawSql(String rawSql) {
+        this.rawSql = rawSql;
+    }
 }
